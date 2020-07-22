@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #146ab4, #15935D);
+}
+
+#win {
+    margin-top: 15%;
+    font-family: 'Lora', serif;
+    font-size: 100px;
+    color: white;
+    display: block;
+    border: 1px solid white;
+    width: 500px;
+    animation-name: myMove;
+    animation-duration: infinite;
+    -webkit-user-select: none;
+    display: none;
+}
+
+#win:hover {
+    background: white;
+    color: black;
+    transition: 1s;
+}
+
+@keyFrames myMove {
+    0% {
+        background: none;
+        color: white;
+    }
+    25% {
+        background: white;
+        color: black;
+    }
+    50% {
+        background: none;
+        color: white;
+    }
+    75% {
+        background: white;
+        color: black;
+    }
+    100% {
+        background: none;
+        color: white;
+    }
+}
